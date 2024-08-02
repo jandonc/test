@@ -1,0 +1,71 @@
+SXS-Defects No.
+SXS-41505, [pre-WS4] SOS call is not able to execute CLOSED
+SXS-41552, [pre-WS4] [Voice call] DCM has not started the call, but MUTE screen appears after IGN-ON CLOSED
+SXS-41773, [pre-WS4] [T26] [VAL]DCM can not respond to HU-REQ-VAL-PINSETNOTIFY CLOSED
+SXS-35027, [SBR][T26][Ethernet] Sending unspecified Ethernet packets CLOSED
+SXS-41962, [SBR][T26][Pre-WS4][RDL]InCarCommunicationFailure is occured even though RDL is successed as Vehicle CLOSED
+"SXS-42081, [SBR][T26][WS4]DCM-REQ-RVC-PKTSIZE is sent at unintended timing CLOSED
+SXS-38573, [SBR_T26][SD-4][RVC] DCM send DCM_REQ_RVC_PKTSIZE upon every wake up from Shutdown CLOSED"
+SXS-42084, [T26][SBR][WS4]DCM does not send HTTP Uplink to TSP (Simulation Server) when connecting with C-ECU. DECIDE
+SXS-39405, [SBR_T26][SD-4][FP][AON][cus]HU_NW_COENNECT back to back request DCM responded with 0x08 error code CLOSED
+SXS-43278, [T26] [WS4] [SBR]Language change from HU is not reflected in DCM CLOSED
+SXS-43783, [SBR][T26][WS4][SVR/ERA]ERA call can be start while SVR is running and before IGN-OFF DCM sleep CLOSED
+SXS-43787, [T26][SBR][SVR/SOS]When initiating SOS during SVR, SOS call and Call display is end. CLOSED
+SXS-43933, [SBR][T26][WS4][SAS]SAS Card POPUP is not displayed WORKING
+SXS-33528, [SBR_T26] [SD-4] DSR-u024 SAS Unread Card Notification not implemented CLOSED
+SXS-34117, [SBR_T26][RHL], DCM doest not accept RHL request (sending a NACK) and still turns on the hazard lamp. CLOSED
+SXS-44013, [T26][SBR][WS4]Not displayed Connecting screen during SOS calling(WS#4) CLOSED
+SXS-44171, [T26][SBR][WS4] DCM respond with invalid routineStatus when get query for key distribution for IV Keys CLOSED
+SXS-44295, [T26][SBR][WS4] IGN-OFF Data Feed is sent during powerd by BUB CLOSED
+SXS-44294, [T26][SBR][WS4] When VAL-related commands are sent during BUB, the error code is not set to "runnningOnBackupBattery" CLOSED
+SXS-47431, [SBR][T26][DRDF]Even if the DRDF data collection trigger is applied multiple times, it is only updated once during the IGN cycle. ANALYZING
+SXS-44303, [T26][SBR][WS4] DCM Language not changed after received ProvMessage from TSP CLOSED
+SXS-44683, [SBR][T26][WS-4][REON][Intermittent] DCM respond with REONResponse with NACK when corresponding CAN Signal is responded within the time limit CLOSED
+SXS-43723, [SBR][T26][WS-4][Connectivity][Intermittent] Sometimes DCM not able to reached TSP Server after DCM almost goes to sleep and wakeup CLOSED
+SXS-44749, [SBR][T26][WS4][Diag]If DCM is turned on the IGN ON again without changing theDTC/FFD data after transmitting the DTC data, a new DTC will occur inthe DCM. CLOSED
+SXS-44710, [SBR][T26][WS4][RDU]If DCM do the RDU during DCM Sleep, only D door was unlocked and InCa Communication Failure was returned to TSP. CLOSED
+SXS-44746, [SBR][T26][WS4][VHS]Even if we change the distance unit setting with IGN-ON immediately before IGN-OFF Data Feed, it is not reflected. DECIDE
+SXS-44929, [SBR][T26][WS4][RVC] RVCDriverProfileNotification is not sent to TSP after HU language change CLOSED
+SXS-45023, [T26][SBR][WS4]After VAL-ON during ERA, an immediate end tone sounds and the Call end screen is displayed, but the end of the call is not processed on CCC. CLOSED
+SXS-45022, [T26][WS4][SBR]If VAL-ON is executed during Concierge, VAL-ON will not turn on until Concierge Call conversation ends. CLOSED
+SXS-45065, [T26][SBR][WS4]B2A1F(Link-Down Ethernet between DCM and CECU) is always detected CLOSED
+SXS-45070, [T26][WS4][SBR]Unnecessary undeliverable judgment(CAN DTC) is made CLOSED
+"SXS-40230, [SBR_T26][SD-4][DCM Self update]: DCM got stuck in the Activation State and Report not sent to Server CLOSED
+SXS-45077, [T26][WS4][SBR][Multi ECU OTA]Activation is not completed DECIDE"
+SXS-45156, [T26][WS4][SBR]Return NRC72 in the middle of SID36 from LCT after installation resumes CLOSED
+SXS-45247, [T26][SBR][WS4][Multi ECU OTA][DCM]Activaton notification screen is not displayed at the first timing CLOSED
+SXS-45262, [T26][SBR][WS4]Wi-Fi Hotspot [HU-REQ-WIFI-ONOFF] command receives no response or NACK response CLOSED
+SXS-45427, [T26][SBR][WS4][AACN]Only the first collision data is reflected in the call center when multiple collisions occur CLOSED
+SXS-45428, [T26][WS4][SBR]MIL/warning light information in call data is partially unmatched. CLOSED
+SXS-45500, [26][WS4][SBR]TErrorcode not-defined3 is used by rvcNotification CLOSED
+SXS-45503, [T26][WS4][SBR]A result of language change is not reflected in rvcProfileChangedNotification CLOSED
+SXS-45514, [T26][SBR][WS4][Multi ECU OTA]C-ECU OTA Activation was failed when the timing of version checking CLOSED
+SXS-45625, [T26][SBR][WS4][SAN]DCM couldn't detect alarm, when security alarm have not continued until DCM was wake up. CLOSED
+SXS-45626, [T26][SBR][WS4][RDL]Doors was locked when DCM received RDL request, but DCM send the response is Nack Error code="inCarCommunicationFaile". CLOSED
+SXS-45628, [T26][SBR][WS4](cus)When submitting DRDF MODE file while BUB is running, "unknown" error code is received CLOSED
+SXS-45932, [T26][SBR][WS4]After interruption by IGN-ON during activation, the C-ECU responds to the interruption upon its resumption DECIDE
+SXS-45933, [T26][SBR][WS4]SAS popup request was sent and displayed even though the precondition was not met (DSR-030) WORKING
+SXS-46063, [T26][SBR][WS4][Curfew]DCM does not send Curfew POP Up requests CLOSED
+SXS-46189, [T26][WS4][SBR]RHL request is send from CCCduring SOS call, But D seat door is unlocked. ANALYZING
+SXS-46194, [T26][SBR][WS4]DCM continues to send out data integrity checks to the LCT and sends a request for transition to the default session at the next IGN-ON CLOSED
+SXS-46340, [T26][WS4][SBR][RDL] RDL is not working during RVL CLOSED
+SXS-46495, [T26][SBR][Ethernet] incorrect spec CLOSED
+SXS-46503, [T26][SBR]GEO fence alerts are not displayed DECIDE
+SXS-46575, [T26][SBR][AACN]Delta Vx,Vy when over +-101km/h was input CLOSED
+SXS-46578, [T26][SBR]Call center prompts are in English even after changing to Spanish CLOSED
+SXS-46664, [T26][SBR][Multi ECU OTA]When the OTA server is stopped during donwload, it appears to send the same error three times when it recovers. DECIDE
+SXS-46670, [Multi ECU OTA]When OTA is aborted and resumed with IGN OFF during LCT installation, the progress rate becomes an abnormal value. & in that case, the log of OTA aborted is not up on the server. CLOSED
+SXS-46666, [T26][SBR][DCM Self Update]When IGN is turned on after Activate is completed, it takes a long time until Complete is displayed. DECIDE
+SXS-46669, [T26][SBR][Multi ECU OTA]Installation/activation continues even if IGN is turned off during DCM OTA installation/activation. DECIDE
+SXS-46676, [T26][SBR][Multi ECU OTA]Error popup is not displayed when OTA is aborted due to inter-device authentication failure. DECIDE
+SXS-46707, [T26][SBR][Multi ECU OTA]When DL is interrupted by pressing SOS CALL when DL progress is 0% at the start of DL, DL speed slows down when resuming DL. CLOSED
+SXS-46652, [Multi ECU OTA]OTA Complete is not displayed. CLOSED
+SXS-46769, [T26][SBR][DID 0x10A1]unexpected response value CLOSED
+SXS-46770, [T26][SBR][DID 0x10E0] incorrect of response value CLOSED
+SXS-46771, [T26][SBR][DID 0x1520] incorrect of response value CLOSED
+SXS-46772, [T26][SBR][DID 0x10A2] incorrect of response value WORKING
+SXS-46774, [T26][SBR][DID 0x10A5] incorrect of response value CLOSED
+SXS-46784, [T26][SBR][DID 0xFF00]response value CLOSED
+SXS-46928, [T26][SBR]When SVR-ON is executed during Concierge or ERA, the end of talk is not processed on CCC. VERIFYING
+SXS-46932, [T26][SBR]Stopped Concierge auto audio prompt in 2 minutes however keeping Calling(SD4) DECIDE
+SXS-46960, [T26][SBR][Diag]Security access cannot be executed DECIDE
